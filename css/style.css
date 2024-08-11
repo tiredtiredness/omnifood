@@ -7,8 +7,14 @@ FONT SIZE SYSTEM (px)
 
 font weights:
 default: 400
+medium 500
+semi bold 600
+bold 700
 
 line heights:
+default 1
+1.05
+paragraph default1.6
 
 --- COLORS
 - primary: #e75e22
@@ -19,9 +25,10 @@ line heights:
 #555
 #333
 
---- SHADOWS
+--- SHADOWS 
 
 --- BORDER RADIUS
+default: 9px
 
 --- WHITESPASE
 */
@@ -47,13 +54,63 @@ body {
   margin-right: 1.6rem !important;
 }
 
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fdf2e9;
+
+  height: 9.6rem;
+  padding: 0 4.8rem;
+}
+
+.logo {
+  height: 2.2rem;
+}
+
+.main-nav__list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+}
+
+.main-nav__link:link,
+.main-nav__link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+  font-size: 1.8rem;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+.main-nav__link:hover,
+.main-nav__link:active {
+  color: #cf711f;
+}
+
+.main-nav__link.nav-cta:link,
+.main-nav__link.nav-cta:visited {
+  padding: 1.2rem 2.4rem;
+  border-radius: 9px;
+  color: #fff;
+  background-color: #e67e22;
+}
+
+.main-nav__link.nav-cta:hover,
+.main-nav__link.nav-cta:active {
+  background-color: #cf711f;
+}
+
 .section__hero {
   background-color: #fdf2e9;
-  padding: 9.6rem 0;
+  padding: 4.8 0 9.6rem 0;
 }
 
 .hero {
   margin: 0 auto;
+  padding: 0 3.2rem;
   max-width: 130rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
