@@ -108,6 +108,7 @@
 
   .btn-mobile {
     display: block;
+    z-index: 10;
   }
   .main-nav {
     background-color: rgb(255, 255, 255, 0.97);
